@@ -60,15 +60,103 @@
 			children = (
 				195BF6DF204C393600EAC45C /* AppDelegate.h */,
 				195BF6E0204C393600EAC45C /* AppDelegate.m */,
-				195BF6E2204C393600EAC45C /* ViewController.h */,
-				195BF6E3204C393600EAC45C /* ViewController.m */,
-				195BF6E5204C393600EAC45C /* Main.storyboard */,
+				195BF6FB204D310400EAC45C /* Models */,
+				195BF6FA204D30FF00EAC45C /* Views */,
+				195BF6F9204D30F300EAC45C /* Controllers */,
+				195BF6FD204D311F00EAC45C /* Common */,
+				195BF6FE204D318100EAC45C /* Managers */,
+				195BF6FF204D319F00EAC45C /* DAO */,
+				195BF6FC204D311200EAC45C /* Assets */,
+				195BF702204D32A800EAC45C /* Supporting Files */,
+			);
+			path = BaseRepository;
+			sourceTree = "<group>";
+		};
+		195BF6F9204D30F300EAC45C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				195BF703204D330D00EAC45C /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		195BF6FA204D30FF00EAC45C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				195BF701204D327100EAC45C /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		195BF6FB204D310400EAC45C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		195BF6FC204D311200EAC45C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				195BF700204D324600EAC45C /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		195BF6FD204D311F00EAC45C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		195BF6FE204D318100EAC45C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		195BF6FF204D319F00EAC45C /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		195BF700204D324600EAC45C /* Images */ = {
+			isa = PBXGroup;
+			children = (
 				195BF6E8204C393600EAC45C /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		195BF701204D327100EAC45C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				195BF6E5204C393600EAC45C /* Main.storyboard */,
 				195BF6EA204C393600EAC45C /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		195BF702204D32A800EAC45C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				195BF6ED204C393600EAC45C /* Info.plist */,
 				195BF6EE204C393600EAC45C /* main.m */,
 			);
-			path = BaseRepository;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		195BF703204D330D00EAC45C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				195BF6E2204C393600EAC45C /* ViewController.h */,
+				195BF6E3204C393600EAC45C /* ViewController.m */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
