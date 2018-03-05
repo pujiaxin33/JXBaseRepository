@@ -1,0 +1,2 @@
+# JXBaseRepository
+JXBaseRepository just base
