@@ -1,0 +1,15 @@
+//
+//  Base-Import.pch
+//  BaseRepository
+//
+//  Created by jiaxin on 2018/3/5.
+//  Copyright © 2018年 jiaxin. All rights reserved.
+//
+
+#ifndef Base_Import_pch
+#define Base_Import_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Base_Import_pch */

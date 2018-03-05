@@ -1,0 +1,22 @@
+//
+//  Base-Defines.pch
+//  BaseRepository
+//
+//  Created by jiaxin on 2018/3/5.
+//  Copyright © 2018年 jiaxin. All rights reserved.
+//
+
+#pragma mark - Blocks
+
+typedef void(^CompleteCallback)(id data, NSError *error);
+typedef void(^CommonBlockCompletion)(id obj);
+typedef void(^CompleteStopCallback)(id data, NSError *error,BOOL *stop);
+typedef void(^CompleteBolleanCallback)(BOOL succeeded, NSError *error);
+typedef void(^CompleteObjectCallback)(id object, NSError *error);
+typedef void(^CompleteCancelCallback)();
+typedef void(^CompleteConfirmCallback)();
+typedef void(^CommonBlockError)(NSError *error);
+typedef void(^CommonVoidCallback)(void);
+
+
+

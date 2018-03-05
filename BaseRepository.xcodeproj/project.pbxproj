@@ -26,6 +26,10 @@
 		195BF6EB204C393600EAC45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		195BF6ED204C393600EAC45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		195BF6EE204C393600EAC45C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		195BF705204D34D100EAC45C /* Base-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base-Prefix.pch"; sourceTree = "<group>"; };
+		195BF706204D34E300EAC45C /* Base-Import.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base-Import.pch"; sourceTree = "<group>"; };
+		195BF707204D350200EAC45C /* Base-Macros.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base-Macros.pch"; sourceTree = "<group>"; };
+		195BF708204D353F00EAC45C /* Base-Defines.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base-Defines.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,10 @@
 			children = (
 				195BF6ED204C393600EAC45C /* Info.plist */,
 				195BF6EE204C393600EAC45C /* main.m */,
+				195BF705204D34D100EAC45C /* Base-Prefix.pch */,
+				195BF706204D34E300EAC45C /* Base-Import.pch */,
+				195BF707204D350200EAC45C /* Base-Macros.pch */,
+				195BF708204D353F00EAC45C /* Base-Defines.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -368,6 +376,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHY5967Q2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BaseRepository/Supporting Files/Base-Prefix.pch";
 				INFOPLIST_FILE = BaseRepository/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,6 +393,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHY5967Q2;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BaseRepository/Supporting Files/Base-Prefix.pch";
 				INFOPLIST_FILE = BaseRepository/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
