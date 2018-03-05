@@ -10,7 +10,7 @@
 #define CDAppDelegateWindow     [[[UIApplication sharedApplication] delegate] window]
 #define   WindowsSize                                   [UIScreen mainScreen].bounds.size
 
-#define   CDIPHONE_OS_MIN_VERSION_ALLOWED(version)      ([[UIDevice currentDevice].systemVersion intValue] >= version ? YES : NO)
+#define   CDIPHONE_OS_MIN_VERSION_ALLOWED(version)      ([[UIDevice currentDevice].systemVersion compare:version options:NSNumericSearch] == NSOrderedDescending || [[UIDevice currentDevice].systemVersion compare:version options:NSNumericSearch] == NSOrderedSame)
 
 //#define   IphoneXScreen                                 ([CDOSDeviceManager sharedDeviceManager].isIphoneX)
 #define   Iphone4Screen                                 ([UIScreen mainScreen].bounds.size.height == 480 ? YES : NO)

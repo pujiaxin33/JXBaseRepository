@@ -13,6 +13,19 @@
 		195BF6E9204C393600EAC45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195BF6E8204C393600EAC45C /* Assets.xcassets */; };
 		195BF6EC204C393600EAC45C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195BF6EA204C393600EAC45C /* LaunchScreen.storyboard */; };
 		195BF6EF204C393600EAC45C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF6EE204C393600EAC45C /* main.m */; };
+		195BF70C204D3C5200EAC45C /* UITableView+EstimatedHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF70B204D3C3700EAC45C /* UITableView+EstimatedHeight.m */; };
+		195BF70F204D3DAD00EAC45C /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF70E204D3DAD00EAC45C /* NSDate+Utility.m */; };
+		195BF712204D3DBC00EAC45C /* NSError+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF711204D3DBC00EAC45C /* NSError+Additions.m */; };
+		195BF715204D3E0400EAC45C /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF713204D3E0300EAC45C /* NSString+Utility.m */; };
+		195BF71B204D3E5000EAC45C /* CDCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF717204D3E4400EAC45C /* CDCalendarManager.m */; };
+		195BF71C204D3E5200EAC45C /* CDDateFormatterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF718204D3E4400EAC45C /* CDDateFormatterManager.m */; };
+		195BF725204D403000EAC45C /* NSNull+CDSafeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF71D204D402E00EAC45C /* NSNull+CDSafeExtension.m */; };
+		195BF726204D403000EAC45C /* NSObject+CDSafeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF71E204D402F00EAC45C /* NSObject+CDSafeExtension.m */; };
+		195BF727204D403000EAC45C /* NSObject+CDSwizzleExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF721204D402F00EAC45C /* NSObject+CDSwizzleExtension.m */; };
+		195BF728204D403000EAC45C /* UIView+CDLayoutExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF724204D403000EAC45C /* UIView+CDLayoutExtension.m */; };
+		195BF72B204D419300EAC45C /* UIWindow+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF729204D419300EAC45C /* UIWindow+Utility.m */; };
+		195BF72E204D41B400EAC45C /* NSTimer+Callback.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF72C204D41B300EAC45C /* NSTimer+Callback.m */; };
+		195BF731204D41CE00EAC45C /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF72F204D41CD00EAC45C /* NSString+Size.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +43,32 @@
 		195BF706204D34E300EAC45C /* Base-Import.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base-Import.pch"; sourceTree = "<group>"; };
 		195BF707204D350200EAC45C /* Base-Macros.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base-Macros.pch"; sourceTree = "<group>"; };
 		195BF708204D353F00EAC45C /* Base-Defines.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Base-Defines.pch"; sourceTree = "<group>"; };
+		195BF70A204D3C3700EAC45C /* UITableView+EstimatedHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+EstimatedHeight.h"; sourceTree = "<group>"; };
+		195BF70B204D3C3700EAC45C /* UITableView+EstimatedHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EstimatedHeight.m"; sourceTree = "<group>"; };
+		195BF70D204D3DAD00EAC45C /* NSDate+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		195BF70E204D3DAD00EAC45C /* NSDate+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
+		195BF710204D3DBC00EAC45C /* NSError+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+Additions.h"; sourceTree = "<group>"; };
+		195BF711204D3DBC00EAC45C /* NSError+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+Additions.m"; sourceTree = "<group>"; };
+		195BF713204D3E0300EAC45C /* NSString+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		195BF714204D3E0400EAC45C /* NSString+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		195BF717204D3E4400EAC45C /* CDCalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCalendarManager.m; sourceTree = "<group>"; };
+		195BF718204D3E4400EAC45C /* CDDateFormatterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDDateFormatterManager.m; sourceTree = "<group>"; };
+		195BF719204D3E4400EAC45C /* CDDateFormatterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDDateFormatterManager.h; sourceTree = "<group>"; };
+		195BF71A204D3E4500EAC45C /* CDCalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCalendarManager.h; sourceTree = "<group>"; };
+		195BF71D204D402E00EAC45C /* NSNull+CDSafeExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNull+CDSafeExtension.m"; sourceTree = "<group>"; };
+		195BF71E204D402F00EAC45C /* NSObject+CDSafeExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CDSafeExtension.m"; sourceTree = "<group>"; };
+		195BF71F204D402F00EAC45C /* UIView+CDLayoutExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CDLayoutExtension.h"; sourceTree = "<group>"; };
+		195BF720204D402F00EAC45C /* NSObject+CDSafeExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CDSafeExtension.h"; sourceTree = "<group>"; };
+		195BF721204D402F00EAC45C /* NSObject+CDSwizzleExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CDSwizzleExtension.m"; sourceTree = "<group>"; };
+		195BF722204D402F00EAC45C /* NSNull+CDSafeExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNull+CDSafeExtension.h"; sourceTree = "<group>"; };
+		195BF723204D403000EAC45C /* NSObject+CDSwizzleExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CDSwizzleExtension.h"; sourceTree = "<group>"; };
+		195BF724204D403000EAC45C /* UIView+CDLayoutExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDLayoutExtension.m"; sourceTree = "<group>"; };
+		195BF729204D419300EAC45C /* UIWindow+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Utility.m"; sourceTree = "<group>"; };
+		195BF72A204D419300EAC45C /* UIWindow+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Utility.h"; sourceTree = "<group>"; };
+		195BF72C204D41B300EAC45C /* NSTimer+Callback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Callback.m"; sourceTree = "<group>"; };
+		195BF72D204D41B400EAC45C /* NSTimer+Callback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Callback.h"; sourceTree = "<group>"; };
+		195BF72F204D41CD00EAC45C /* NSString+Size.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		195BF730204D41CE00EAC45C /* NSString+Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +149,7 @@
 		195BF6FD204D311F00EAC45C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				195BF709204D3B4C00EAC45C /* Category */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -117,6 +157,7 @@
 		195BF6FE204D318100EAC45C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				195BF716204D3E3600EAC45C /* Common */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -165,6 +206,46 @@
 				195BF6E3204C393600EAC45C /* ViewController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		195BF709204D3B4C00EAC45C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				195BF730204D41CE00EAC45C /* NSString+Size.h */,
+				195BF72F204D41CD00EAC45C /* NSString+Size.m */,
+				195BF72D204D41B400EAC45C /* NSTimer+Callback.h */,
+				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
+				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
+				195BF729204D419300EAC45C /* UIWindow+Utility.m */,
+				195BF722204D402F00EAC45C /* NSNull+CDSafeExtension.h */,
+				195BF71D204D402E00EAC45C /* NSNull+CDSafeExtension.m */,
+				195BF720204D402F00EAC45C /* NSObject+CDSafeExtension.h */,
+				195BF71E204D402F00EAC45C /* NSObject+CDSafeExtension.m */,
+				195BF723204D403000EAC45C /* NSObject+CDSwizzleExtension.h */,
+				195BF721204D402F00EAC45C /* NSObject+CDSwizzleExtension.m */,
+				195BF71F204D402F00EAC45C /* UIView+CDLayoutExtension.h */,
+				195BF724204D403000EAC45C /* UIView+CDLayoutExtension.m */,
+				195BF710204D3DBC00EAC45C /* NSError+Additions.h */,
+				195BF711204D3DBC00EAC45C /* NSError+Additions.m */,
+				195BF70D204D3DAD00EAC45C /* NSDate+Utility.h */,
+				195BF70E204D3DAD00EAC45C /* NSDate+Utility.m */,
+				195BF714204D3E0400EAC45C /* NSString+Utility.h */,
+				195BF713204D3E0300EAC45C /* NSString+Utility.m */,
+				195BF70A204D3C3700EAC45C /* UITableView+EstimatedHeight.h */,
+				195BF70B204D3C3700EAC45C /* UITableView+EstimatedHeight.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		195BF716204D3E3600EAC45C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				195BF71A204D3E4500EAC45C /* CDCalendarManager.h */,
+				195BF717204D3E4400EAC45C /* CDCalendarManager.m */,
+				195BF719204D3E4400EAC45C /* CDDateFormatterManager.h */,
+				195BF718204D3E4400EAC45C /* CDDateFormatterManager.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +319,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195BF72B204D419300EAC45C /* UIWindow+Utility.m in Sources */,
+				195BF715204D3E0400EAC45C /* NSString+Utility.m in Sources */,
 				195BF6E4204C393600EAC45C /* ViewController.m in Sources */,
+				195BF71B204D3E5000EAC45C /* CDCalendarManager.m in Sources */,
+				195BF727204D403000EAC45C /* NSObject+CDSwizzleExtension.m in Sources */,
+				195BF70C204D3C5200EAC45C /* UITableView+EstimatedHeight.m in Sources */,
+				195BF728204D403000EAC45C /* UIView+CDLayoutExtension.m in Sources */,
+				195BF71C204D3E5200EAC45C /* CDDateFormatterManager.m in Sources */,
+				195BF731204D41CE00EAC45C /* NSString+Size.m in Sources */,
+				195BF70F204D3DAD00EAC45C /* NSDate+Utility.m in Sources */,
+				195BF72E204D41B400EAC45C /* NSTimer+Callback.m in Sources */,
+				195BF712204D3DBC00EAC45C /* NSError+Additions.m in Sources */,
+				195BF725204D403000EAC45C /* NSNull+CDSafeExtension.m in Sources */,
 				195BF6EF204C393600EAC45C /* main.m in Sources */,
 				195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */,
+				195BF726204D403000EAC45C /* NSObject+CDSafeExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,11 +468,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHY5967Q2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaseRepository/Supporting Files/Base-Prefix.pch";
-				INFOPLIST_FILE = BaseRepository/Info.plist;
+				INFOPLIST_FILE = "BaseRepository/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiaxin.BaseRepository;
@@ -391,11 +486,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHY5967Q2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaseRepository/Supporting Files/Base-Prefix.pch";
-				INFOPLIST_FILE = BaseRepository/Info.plist;
+				INFOPLIST_FILE = "BaseRepository/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiaxin.BaseRepository;
