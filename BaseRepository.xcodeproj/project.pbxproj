@@ -35,6 +35,7 @@
 		196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6774204E770A00C4A745 /* BaseTableViewCell.m */; };
 		196A677E204E7EE100C4A745 /* CDOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A677D204E7EE100C4A745 /* CDOverlayWindow.m */; };
 		70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */; };
+		70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,8 @@
 		196A677D204E7EE100C4A745 /* CDOverlayWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDOverlayWindow.m; sourceTree = "<group>"; };
 		70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FilePathSize.h"; sourceTree = "<group>"; };
 		70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilePathSize.m"; sourceTree = "<group>"; };
+		70E4E504204E95090036BBA1 /* UIViewController+RotateScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RotateScreen.h"; sourceTree = "<group>"; };
+		70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RotateScreen.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,8 @@
 				1951A24F204E470C00E3F565 /* UIViewController+CDNavigationItem.m */,
 				196A6769204E742700C4A745 /* UIViewController+Utility.h */,
 				196A676A204E742700C4A745 /* UIViewController+Utility.m */,
+				70E4E504204E95090036BBA1 /* UIViewController+RotateScreen.h */,
+				70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1951A252204E475600E3F565 /* UIBarButtonItem+CDProduce.m in Sources */,
+				70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */,
 				195BF72B204D419300EAC45C /* UIWindow+Utility.m in Sources */,
 				195BF715204D3E0400EAC45C /* NSString+Utility.m in Sources */,
 				195BF6E4204C393600EAC45C /* ViewController.m in Sources */,
