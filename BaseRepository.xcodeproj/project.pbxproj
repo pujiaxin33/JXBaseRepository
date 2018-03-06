@@ -28,6 +28,7 @@
 		195BF731204D41CE00EAC45C /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF72F204D41CD00EAC45C /* NSString+Size.m */; };
 		195BF735204D475400EAC45C /* CDPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF733204D474600EAC45C /* CDPopoverView.m */; };
 		195BF739204D48FB00EAC45C /* CDWeakableReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF738204D48EF00EAC45C /* CDWeakableReference.m */; };
+		70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		195BF734204D474600EAC45C /* CDPopoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDPopoverView.h; sourceTree = "<group>"; };
 		195BF737204D48EF00EAC45C /* CDWeakableReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDWeakableReference.h; sourceTree = "<group>"; };
 		195BF738204D48EF00EAC45C /* CDWeakableReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDWeakableReference.m; sourceTree = "<group>"; };
+		70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FilePathSize.h"; sourceTree = "<group>"; };
+		70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilePathSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 			children = (
 				195BF730204D41CE00EAC45C /* NSString+Size.h */,
 				195BF72F204D41CD00EAC45C /* NSString+Size.m */,
+				70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */,
+				70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */,
 				195BF72D204D41B400EAC45C /* NSTimer+Callback.h */,
 				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
 				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
@@ -359,6 +364,7 @@
 				195BF72E204D41B400EAC45C /* NSTimer+Callback.m in Sources */,
 				195BF712204D3DBC00EAC45C /* NSError+Additions.m in Sources */,
 				195BF735204D475400EAC45C /* CDPopoverView.m in Sources */,
+				70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */,
 				195BF725204D403000EAC45C /* NSNull+CDSafeExtension.m in Sources */,
 				195BF6EF204C393600EAC45C /* main.m in Sources */,
 				195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */,
