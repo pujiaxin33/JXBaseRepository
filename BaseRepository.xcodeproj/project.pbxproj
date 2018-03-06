@@ -33,6 +33,7 @@
 		196A676E204E769800C4A745 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A676D204E769800C4A745 /* BaseViewController.m */; };
 		196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6770204E76C600C4A745 /* BaseTableViewController.m */; };
 		196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6774204E770A00C4A745 /* BaseTableViewCell.m */; };
+		196A677E204E7EE100C4A745 /* CDOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A677D204E7EE100C4A745 /* CDOverlayWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,11 @@
 		196A6770204E76C600C4A745 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		196A6773204E770A00C4A745 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		196A6774204E770A00C4A745 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		196A6779204E7CE400C4A745 /* BaseConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseConstants.h; sourceTree = "<group>"; };
+		196A677A204E7D2800C4A745 /* NotificationConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationConstants.h; sourceTree = "<group>"; };
+		196A677B204E7D3200C4A745 /* UIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
+		196A677C204E7EE100C4A745 /* CDOverlayWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDOverlayWindow.h; sourceTree = "<group>"; };
+		196A677D204E7EE100C4A745 /* CDOverlayWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDOverlayWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +258,7 @@
 		195BF6FD204D311F00EAC45C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				196A6776204E7B2800C4A745 /* Constants */,
 				1951A247204E404400E3F565 /* Libraries */,
 				195BF736204D48E600EAC45C /* Other */,
 				195BF709204D3B4C00EAC45C /* Category */,
@@ -362,6 +369,8 @@
 				196A6772204E76F300C4A745 /* Base */,
 				195BF734204D474600EAC45C /* CDPopoverView.h */,
 				195BF733204D474600EAC45C /* CDPopoverView.m */,
+				196A677C204E7EE100C4A745 /* CDOverlayWindow.h */,
+				196A677D204E7EE100C4A745 /* CDOverlayWindow.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -393,6 +402,16 @@
 				196A6774204E770A00C4A745 /* BaseTableViewCell.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		196A6776204E7B2800C4A745 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				196A6779204E7CE400C4A745 /* BaseConstants.h */,
+				196A677A204E7D2800C4A745 /* NotificationConstants.h */,
+				196A677B204E7D3200C4A745 /* UIConstants.h */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +506,7 @@
 				195BF6EF204C393600EAC45C /* main.m in Sources */,
 				195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */,
 				1951A24B204E40E300E3F565 /* JXCalculateFactory.m in Sources */,
+				196A677E204E7EE100C4A745 /* CDOverlayWindow.m in Sources */,
 				196A676E204E769800C4A745 /* BaseViewController.m in Sources */,
 				195BF726204D403000EAC45C /* NSObject+CDSafeExtension.m in Sources */,
 			);
