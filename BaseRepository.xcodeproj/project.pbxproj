@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1951A24B204E40E300E3F565 /* JXCalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1951A24A204E40E300E3F565 /* JXCalculateFactory.m */; };
 		195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF6E0204C393600EAC45C /* AppDelegate.m */; };
 		195BF6E4204C393600EAC45C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF6E3204C393600EAC45C /* ViewController.m */; };
 		195BF6E7204C393600EAC45C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195BF6E5204C393600EAC45C /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1951A249204E40E300E3F565 /* JXCalculateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXCalculateFactory.h; sourceTree = "<group>"; };
+		1951A24A204E40E300E3F565 /* JXCalculateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXCalculateFactory.m; sourceTree = "<group>"; };
 		195BF6DC204C393600EAC45C /* BaseRepository.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseRepository.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195BF6DF204C393600EAC45C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		195BF6E0204C393600EAC45C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +94,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1951A242204E3F7000E3F565 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				1951A248204E407C00E3F565 /* Math */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		1951A243204E3F9700E3F565 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		1951A244204E3FA200E3F565 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		1951A245204E3FAB00E3F565 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		1951A246204E402800E3F565 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1951A247204E404400E3F565 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		1951A248204E407C00E3F565 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				1951A249204E40E300E3F565 /* JXCalculateFactory.h */,
+				1951A24A204E40E300E3F565 /* JXCalculateFactory.m */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		1951A24C204E43CF00E3F565 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		195BF6D3204C393600EAC45C = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +177,10 @@
 				195BF6FB204D310400EAC45C /* Models */,
 				195BF6FA204D30FF00EAC45C /* Views */,
 				195BF6F9204D30F300EAC45C /* Controllers */,
+				1951A24C204E43CF00E3F565 /* Network */,
 				195BF6FD204D311F00EAC45C /* Common */,
 				195BF6FE204D318100EAC45C /* Managers */,
+				1951A242204E3F7000E3F565 /* Factories */,
 				195BF6FF204D319F00EAC45C /* DAO */,
 				195BF6FC204D311200EAC45C /* Assets */,
 				195BF702204D32A800EAC45C /* Supporting Files */,
@@ -127,6 +191,7 @@
 		195BF6F9204D30F300EAC45C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1951A246204E402800E3F565 /* Common */,
 				195BF703204D330D00EAC45C /* Main */,
 			);
 			path = Controllers;
@@ -136,8 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				195BF732204D473700EAC45C /* Common */,
-				195BF734204D474600EAC45C /* CDPopoverView.h */,
-				195BF733204D474600EAC45C /* CDPopoverView.m */,
 				195BF701204D327100EAC45C /* Main */,
 			);
 			path = Views;
@@ -154,6 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				195BF700204D324600EAC45C /* Images */,
+				1951A245204E3FAB00E3F565 /* Config */,
+				1951A244204E3FA200E3F565 /* Videos */,
+				1951A243204E3F9700E3F565 /* Audio */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -161,6 +227,7 @@
 		195BF6FD204D311F00EAC45C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1951A247204E404400E3F565 /* Libraries */,
 				195BF736204D48E600EAC45C /* Other */,
 				195BF709204D3B4C00EAC45C /* Category */,
 			);
@@ -170,7 +237,7 @@
 		195BF6FE204D318100EAC45C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				195BF716204D3E3600EAC45C /* Common */,
+				195BF716204D3E3600EAC45C /* Date */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -252,7 +319,7 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		195BF716204D3E3600EAC45C /* Common */ = {
+		195BF716204D3E3600EAC45C /* Date */ = {
 			isa = PBXGroup;
 			children = (
 				195BF71A204D3E4500EAC45C /* CDCalendarManager.h */,
@@ -260,12 +327,14 @@
 				195BF719204D3E4400EAC45C /* CDDateFormatterManager.h */,
 				195BF718204D3E4400EAC45C /* CDDateFormatterManager.m */,
 			);
-			path = Common;
+			path = Date;
 			sourceTree = "<group>";
 		};
 		195BF732204D473700EAC45C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				195BF734204D474600EAC45C /* CDPopoverView.h */,
+				195BF733204D474600EAC45C /* CDPopoverView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -368,6 +437,7 @@
 				195BF725204D403000EAC45C /* NSNull+CDSafeExtension.m in Sources */,
 				195BF6EF204C393600EAC45C /* main.m in Sources */,
 				195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */,
+				1951A24B204E40E300E3F565 /* JXCalculateFactory.m in Sources */,
 				195BF726204D403000EAC45C /* NSObject+CDSafeExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

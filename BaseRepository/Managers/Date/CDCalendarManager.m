@@ -16,7 +16,7 @@
 
 @implementation CDCalendarManager
 
-+ (instancetype)defaultManager
++ (instancetype)sharedInstance
 {
     static CDCalendarManager *calendarManager = nil;
     static dispatch_once_t onceToken;

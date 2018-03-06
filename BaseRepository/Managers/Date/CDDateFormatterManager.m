@@ -71,7 +71,7 @@
 
 @implementation CDDateFormatterManager
 
-+ (instancetype)defaultManager
++ (instancetype)sharedInstance
 {
     static CDDateFormatterManager *manager = nil;
     static dispatch_once_t onceToken;
