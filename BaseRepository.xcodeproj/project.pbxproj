@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1951A24B204E40E300E3F565 /* JXCalculateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1951A24A204E40E300E3F565 /* JXCalculateFactory.m */; };
+		1951A252204E475600E3F565 /* UIBarButtonItem+CDProduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 1951A250204E475400E3F565 /* UIBarButtonItem+CDProduce.m */; };
 		195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF6E0204C393600EAC45C /* AppDelegate.m */; };
 		195BF6E4204C393600EAC45C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF6E3204C393600EAC45C /* ViewController.m */; };
 		195BF6E7204C393600EAC45C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195BF6E5204C393600EAC45C /* Main.storyboard */; };
@@ -29,11 +30,18 @@
 		195BF731204D41CE00EAC45C /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF72F204D41CD00EAC45C /* NSString+Size.m */; };
 		195BF735204D475400EAC45C /* CDPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF733204D474600EAC45C /* CDPopoverView.m */; };
 		195BF739204D48FB00EAC45C /* CDWeakableReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 195BF738204D48EF00EAC45C /* CDWeakableReference.m */; };
+		196A676E204E769800C4A745 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A676D204E769800C4A745 /* BaseViewController.m */; };
+		196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6770204E76C600C4A745 /* BaseTableViewController.m */; };
+		196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6774204E770A00C4A745 /* BaseTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1951A249204E40E300E3F565 /* JXCalculateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JXCalculateFactory.h; sourceTree = "<group>"; };
 		1951A24A204E40E300E3F565 /* JXCalculateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXCalculateFactory.m; sourceTree = "<group>"; };
+		1951A24E204E470C00E3F565 /* UIViewController+CDNavigationItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CDNavigationItem.h"; sourceTree = "<group>"; };
+		1951A24F204E470C00E3F565 /* UIViewController+CDNavigationItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CDNavigationItem.m"; sourceTree = "<group>"; };
+		1951A250204E475400E3F565 /* UIBarButtonItem+CDProduce.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CDProduce.m"; sourceTree = "<group>"; };
+		1951A251204E475500E3F565 /* UIBarButtonItem+CDProduce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CDProduce.h"; sourceTree = "<group>"; };
 		195BF6DC204C393600EAC45C /* BaseRepository.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseRepository.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195BF6DF204C393600EAC45C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		195BF6E0204C393600EAC45C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +86,14 @@
 		195BF734204D474600EAC45C /* CDPopoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDPopoverView.h; sourceTree = "<group>"; };
 		195BF737204D48EF00EAC45C /* CDWeakableReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDWeakableReference.h; sourceTree = "<group>"; };
 		195BF738204D48EF00EAC45C /* CDWeakableReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDWeakableReference.m; sourceTree = "<group>"; };
+		196A6769204E742700C4A745 /* UIViewController+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utility.h"; sourceTree = "<group>"; };
+		196A676A204E742700C4A745 /* UIViewController+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utility.m"; sourceTree = "<group>"; };
+		196A676C204E769800C4A745 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		196A676D204E769800C4A745 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		196A676F204E76C600C4A745 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		196A6770204E76C600C4A745 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		196A6773204E770A00C4A745 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		196A6774204E770A00C4A745 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +139,7 @@
 		1951A246204E402800E3F565 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				196A676B204E768500C4A745 /* Base */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -148,6 +165,17 @@
 			children = (
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1951A24D204E46A600E3F565 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1951A24E204E470C00E3F565 /* UIViewController+CDNavigationItem.h */,
+				1951A24F204E470C00E3F565 /* UIViewController+CDNavigationItem.m */,
+				196A6769204E742700C4A745 /* UIViewController+Utility.h */,
+				196A676A204E742700C4A745 /* UIViewController+Utility.m */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		195BF6D3204C393600EAC45C = {
@@ -288,8 +316,11 @@
 		195BF709204D3B4C00EAC45C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1951A24D204E46A600E3F565 /* UIViewController */,
 				195BF730204D41CE00EAC45C /* NSString+Size.h */,
 				195BF72F204D41CD00EAC45C /* NSString+Size.m */,
+				1951A251204E475500E3F565 /* UIBarButtonItem+CDProduce.h */,
+				1951A250204E475400E3F565 /* UIBarButtonItem+CDProduce.m */,
 				195BF72D204D41B400EAC45C /* NSTimer+Callback.h */,
 				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
 				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
@@ -328,6 +359,7 @@
 		195BF732204D473700EAC45C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				196A6772204E76F300C4A745 /* Base */,
 				195BF734204D474600EAC45C /* CDPopoverView.h */,
 				195BF733204D474600EAC45C /* CDPopoverView.m */,
 			);
@@ -341,6 +373,26 @@
 				195BF738204D48EF00EAC45C /* CDWeakableReference.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		196A676B204E768500C4A745 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				196A676C204E769800C4A745 /* BaseViewController.h */,
+				196A676D204E769800C4A745 /* BaseViewController.m */,
+				196A676F204E76C600C4A745 /* BaseTableViewController.h */,
+				196A6770204E76C600C4A745 /* BaseTableViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		196A6772204E76F300C4A745 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				196A6773204E770A00C4A745 /* BaseTableViewCell.h */,
+				196A6774204E770A00C4A745 /* BaseTableViewCell.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,11 +466,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1951A252204E475600E3F565 /* UIBarButtonItem+CDProduce.m in Sources */,
 				195BF72B204D419300EAC45C /* UIWindow+Utility.m in Sources */,
 				195BF715204D3E0400EAC45C /* NSString+Utility.m in Sources */,
 				195BF6E4204C393600EAC45C /* ViewController.m in Sources */,
 				195BF71B204D3E5000EAC45C /* CDCalendarManager.m in Sources */,
 				195BF727204D403000EAC45C /* NSObject+CDSwizzleExtension.m in Sources */,
+				196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */,
+				196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */,
 				195BF70C204D3C5200EAC45C /* UITableView+EstimatedHeight.m in Sources */,
 				195BF728204D403000EAC45C /* UIView+CDLayoutExtension.m in Sources */,
 				195BF71C204D3E5200EAC45C /* CDDateFormatterManager.m in Sources */,
@@ -432,6 +487,7 @@
 				195BF6EF204C393600EAC45C /* main.m in Sources */,
 				195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */,
 				1951A24B204E40E300E3F565 /* JXCalculateFactory.m in Sources */,
+				196A676E204E769800C4A745 /* BaseViewController.m in Sources */,
 				195BF726204D403000EAC45C /* NSObject+CDSafeExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
