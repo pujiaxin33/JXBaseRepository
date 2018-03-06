@@ -34,6 +34,7 @@
 		196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6770204E76C600C4A745 /* BaseTableViewController.m */; };
 		196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6774204E770A00C4A745 /* BaseTableViewCell.m */; };
 		196A677E204E7EE100C4A745 /* CDOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A677D204E7EE100C4A745 /* CDOverlayWindow.m */; };
+		70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,8 @@
 		196A677B204E7D3200C4A745 /* UIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		196A677C204E7EE100C4A745 /* CDOverlayWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDOverlayWindow.h; sourceTree = "<group>"; };
 		196A677D204E7EE100C4A745 /* CDOverlayWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDOverlayWindow.m; sourceTree = "<group>"; };
+		70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FilePathSize.h"; sourceTree = "<group>"; };
+		70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilePathSize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +331,8 @@
 				195BF72F204D41CD00EAC45C /* NSString+Size.m */,
 				1951A251204E475500E3F565 /* UIBarButtonItem+CDProduce.h */,
 				1951A250204E475400E3F565 /* UIBarButtonItem+CDProduce.m */,
+				70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */,
+				70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */,
 				195BF72D204D41B400EAC45C /* NSTimer+Callback.h */,
 				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
 				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
@@ -502,6 +507,7 @@
 				195BF72E204D41B400EAC45C /* NSTimer+Callback.m in Sources */,
 				195BF712204D3DBC00EAC45C /* NSError+Additions.m in Sources */,
 				195BF735204D475400EAC45C /* CDPopoverView.m in Sources */,
+				70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */,
 				195BF725204D403000EAC45C /* NSNull+CDSafeExtension.m in Sources */,
 				195BF6EF204C393600EAC45C /* main.m in Sources */,
 				195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */,
