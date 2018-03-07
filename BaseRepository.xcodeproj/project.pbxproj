@@ -47,6 +47,7 @@
 		42531ED96BC9CB96BC13CE9A /* libPods-BaseRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A36C8ECDB8F7795C6F60E5 /* libPods-BaseRepository.a */; };
 		70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */; };
 		70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */; };
+		70E4E509204F84FB0036BBA1 /* UIView+GestureBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,8 @@
 		70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RotateScreen.m"; sourceTree = "<group>"; };
 		B0BF4D0FC09B4C25E0190242 /* Pods-BaseRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseRepository.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseRepository/Pods-BaseRepository.release.xcconfig"; sourceTree = "<group>"; };
 		D2A36C8ECDB8F7795C6F60E5 /* libPods-BaseRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E4E507204F84FB0036BBA1 /* UIView+GestureBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureBlock.h"; sourceTree = "<group>"; };
+		70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +392,8 @@
 				196A679A204F8C6400C4A745 /* NSData+CommonCrypto.m */,
 				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
 				195BF729204D419300EAC45C /* UIWindow+Utility.m */,
+				70E4E507204F84FB0036BBA1 /* UIView+GestureBlock.h */,
+				70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */,
 				195BF722204D402F00EAC45C /* NSNull+CDSafeExtension.h */,
 				195BF71D204D402E00EAC45C /* NSNull+CDSafeExtension.m */,
 				195BF720204D402F00EAC45C /* NSObject+CDSafeExtension.h */,
@@ -649,6 +654,7 @@
 				195BF71B204D3E5000EAC45C /* CDCalendarManager.m in Sources */,
 				195BF727204D403000EAC45C /* NSObject+CDSwizzleExtension.m in Sources */,
 				196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */,
+				70E4E509204F84FB0036BBA1 /* UIView+GestureBlock.m in Sources */,
 				196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */,
 				195BF70C204D3C5200EAC45C /* UITableView+EstimatedHeight.m in Sources */,
 				196A6790204F8A1000C4A745 /* ServerHostManager.m in Sources */,
