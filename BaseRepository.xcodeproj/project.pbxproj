@@ -36,6 +36,7 @@
 		196A677E204E7EE100C4A745 /* CDOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A677D204E7EE100C4A745 /* CDOverlayWindow.m */; };
 		70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */; };
 		70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */; };
+		70E4E509204F84FB0036BBA1 /* UIView+GestureBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,8 @@
 		70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilePathSize.m"; sourceTree = "<group>"; };
 		70E4E504204E95090036BBA1 /* UIViewController+RotateScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RotateScreen.h"; sourceTree = "<group>"; };
 		70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RotateScreen.m"; sourceTree = "<group>"; };
+		70E4E507204F84FB0036BBA1 /* UIView+GestureBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureBlock.h"; sourceTree = "<group>"; };
+		70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +345,8 @@
 				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
 				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
 				195BF729204D419300EAC45C /* UIWindow+Utility.m */,
+				70E4E507204F84FB0036BBA1 /* UIView+GestureBlock.h */,
+				70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */,
 				195BF722204D402F00EAC45C /* NSNull+CDSafeExtension.h */,
 				195BF71D204D402E00EAC45C /* NSNull+CDSafeExtension.m */,
 				195BF720204D402F00EAC45C /* NSObject+CDSafeExtension.h */,
@@ -503,6 +508,7 @@
 				195BF71B204D3E5000EAC45C /* CDCalendarManager.m in Sources */,
 				195BF727204D403000EAC45C /* NSObject+CDSwizzleExtension.m in Sources */,
 				196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */,
+				70E4E509204F84FB0036BBA1 /* UIView+GestureBlock.m in Sources */,
 				196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */,
 				195BF70C204D3C5200EAC45C /* UITableView+EstimatedHeight.m in Sources */,
 				195BF728204D403000EAC45C /* UIView+CDLayoutExtension.m in Sources */,
