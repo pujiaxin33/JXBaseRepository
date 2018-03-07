@@ -34,6 +34,17 @@
 		196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6770204E76C600C4A745 /* BaseTableViewController.m */; };
 		196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6774204E770A00C4A745 /* BaseTableViewCell.m */; };
 		196A677E204E7EE100C4A745 /* CDOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A677D204E7EE100C4A745 /* CDOverlayWindow.m */; };
+		196A6781204F7E7500C4A745 /* ServerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6780204F7E6D00C4A745 /* ServerDataSource.m */; };
+		196A6784204F7EAC00C4A745 /* CDAbstractService.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6783204F7EAB00C4A745 /* CDAbstractService.m */; };
+		196A678C204F864000C4A745 /* CDResumeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6789204F864000C4A745 /* CDResumeOperation.m */; };
+		196A678D204F864000C4A745 /* ServerDownloadDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A678B204F864000C4A745 /* ServerDownloadDataSource.m */; };
+		196A6790204F8A1000C4A745 /* ServerHostManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A678F204F8A1000C4A745 /* ServerHostManager.m */; };
+		196A6793204F8AA400C4A745 /* CDJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6792204F8AA400C4A745 /* CDJsonKit.m */; };
+		196A6796204F8B1000C4A745 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6794204F8B1000C4A745 /* NSString+URLEncode.m */; };
+		196A6799204F8C4E00C4A745 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A6798204F8C4E00C4A745 /* NSData+MD5Digest.m */; };
+		196A679C204F8C6500C4A745 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A679A204F8C6400C4A745 /* NSData+CommonCrypto.m */; };
+		196A67A0204F913D00C4A745 /* CDUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 196A679F204F913800C4A745 /* CDUserDefaultsManager.m */; };
+		42531ED96BC9CB96BC13CE9A /* libPods-BaseRepository.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A36C8ECDB8F7795C6F60E5 /* libPods-BaseRepository.a */; };
 		70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */; };
 		70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */; };
 /* End PBXBuildFile section */
@@ -102,10 +113,33 @@
 		196A677B204E7D3200C4A745 /* UIConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstants.h; sourceTree = "<group>"; };
 		196A677C204E7EE100C4A745 /* CDOverlayWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDOverlayWindow.h; sourceTree = "<group>"; };
 		196A677D204E7EE100C4A745 /* CDOverlayWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDOverlayWindow.m; sourceTree = "<group>"; };
+		196A677F204F7E6D00C4A745 /* ServerDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerDataSource.h; sourceTree = "<group>"; };
+		196A6780204F7E6D00C4A745 /* ServerDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerDataSource.m; sourceTree = "<group>"; };
+		196A6782204F7EAB00C4A745 /* CDAbstractService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAbstractService.h; sourceTree = "<group>"; };
+		196A6783204F7EAB00C4A745 /* CDAbstractService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAbstractService.m; sourceTree = "<group>"; };
+		196A6788204F864000C4A745 /* ServerDownloadDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerDownloadDataSource.h; sourceTree = "<group>"; };
+		196A6789204F864000C4A745 /* CDResumeOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDResumeOperation.m; sourceTree = "<group>"; };
+		196A678A204F864000C4A745 /* CDResumeOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDResumeOperation.h; sourceTree = "<group>"; };
+		196A678B204F864000C4A745 /* ServerDownloadDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerDownloadDataSource.m; sourceTree = "<group>"; };
+		196A678E204F8A1000C4A745 /* ServerHostManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerHostManager.h; sourceTree = "<group>"; };
+		196A678F204F8A1000C4A745 /* ServerHostManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerHostManager.m; sourceTree = "<group>"; };
+		196A6791204F8AA400C4A745 /* CDJsonKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDJsonKit.h; sourceTree = "<group>"; };
+		196A6792204F8AA400C4A745 /* CDJsonKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDJsonKit.m; sourceTree = "<group>"; };
+		196A6794204F8B1000C4A745 /* NSString+URLEncode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncode.m"; sourceTree = "<group>"; };
+		196A6795204F8B1000C4A745 /* NSString+URLEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
+		196A6797204F8C4D00C4A745 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5Digest.h"; sourceTree = "<group>"; };
+		196A6798204F8C4E00C4A745 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5Digest.m"; sourceTree = "<group>"; };
+		196A679A204F8C6400C4A745 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		196A679B204F8C6400C4A745 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		196A679E204F913800C4A745 /* CDUserDefaultsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDUserDefaultsManager.h; sourceTree = "<group>"; };
+		196A679F204F913800C4A745 /* CDUserDefaultsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDUserDefaultsManager.m; sourceTree = "<group>"; };
+		4025D103ABB7363BCA613FE4 /* Pods-BaseRepository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseRepository.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseRepository/Pods-BaseRepository.debug.xcconfig"; sourceTree = "<group>"; };
 		70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FilePathSize.h"; sourceTree = "<group>"; };
 		70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FilePathSize.m"; sourceTree = "<group>"; };
 		70E4E504204E95090036BBA1 /* UIViewController+RotateScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RotateScreen.h"; sourceTree = "<group>"; };
 		70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RotateScreen.m"; sourceTree = "<group>"; };
+		B0BF4D0FC09B4C25E0190242 /* Pods-BaseRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseRepository.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseRepository/Pods-BaseRepository.release.xcconfig"; sourceTree = "<group>"; };
+		D2A36C8ECDB8F7795C6F60E5 /* libPods-BaseRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42531ED96BC9CB96BC13CE9A /* libPods-BaseRepository.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +210,7 @@
 		1951A24C204E43CF00E3F565 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				196A6785204F7EB100C4A745 /* Base */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -197,6 +233,8 @@
 			children = (
 				195BF6DE204C393600EAC45C /* BaseRepository */,
 				195BF6DD204C393600EAC45C /* Products */,
+				36B6364055729255635C2FF6 /* Pods */,
+				624A25568A2E24B07B004DD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +315,7 @@
 		195BF6FE204D318100EAC45C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				196A679D204F912000C4A745 /* UserDefaults */,
 				195BF716204D3E3600EAC45C /* Date */,
 			);
 			path = Managers;
@@ -334,12 +373,20 @@
 				1951A24D204E46A600E3F565 /* UIViewController */,
 				195BF730204D41CE00EAC45C /* NSString+Size.h */,
 				195BF72F204D41CD00EAC45C /* NSString+Size.m */,
+				196A6791204F8AA400C4A745 /* CDJsonKit.h */,
+				196A6792204F8AA400C4A745 /* CDJsonKit.m */,
+				196A6795204F8B1000C4A745 /* NSString+URLEncode.h */,
+				196A6794204F8B1000C4A745 /* NSString+URLEncode.m */,
+				196A6797204F8C4D00C4A745 /* NSData+MD5Digest.h */,
+				196A6798204F8C4E00C4A745 /* NSData+MD5Digest.m */,
 				1951A251204E475500E3F565 /* UIBarButtonItem+CDProduce.h */,
 				1951A250204E475400E3F565 /* UIBarButtonItem+CDProduce.m */,
 				70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */,
 				70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */,
 				195BF72D204D41B400EAC45C /* NSTimer+Callback.h */,
 				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
+				196A679B204F8C6400C4A745 /* NSData+CommonCrypto.h */,
+				196A679A204F8C6400C4A745 /* NSData+CommonCrypto.m */,
 				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
 				195BF729204D419300EAC45C /* UIWindow+Utility.m */,
 				195BF722204D402F00EAC45C /* NSNull+CDSafeExtension.h */,
@@ -424,6 +471,49 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		196A6785204F7EB100C4A745 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				196A677F204F7E6D00C4A745 /* ServerDataSource.h */,
+				196A6780204F7E6D00C4A745 /* ServerDataSource.m */,
+				196A6782204F7EAB00C4A745 /* CDAbstractService.h */,
+				196A6783204F7EAB00C4A745 /* CDAbstractService.m */,
+				196A678A204F864000C4A745 /* CDResumeOperation.h */,
+				196A6789204F864000C4A745 /* CDResumeOperation.m */,
+				196A6788204F864000C4A745 /* ServerDownloadDataSource.h */,
+				196A678B204F864000C4A745 /* ServerDownloadDataSource.m */,
+				196A678E204F8A1000C4A745 /* ServerHostManager.h */,
+				196A678F204F8A1000C4A745 /* ServerHostManager.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		196A679D204F912000C4A745 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				196A679E204F913800C4A745 /* CDUserDefaultsManager.h */,
+				196A679F204F913800C4A745 /* CDUserDefaultsManager.m */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		36B6364055729255635C2FF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4025D103ABB7363BCA613FE4 /* Pods-BaseRepository.debug.xcconfig */,
+				B0BF4D0FC09B4C25E0190242 /* Pods-BaseRepository.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		624A25568A2E24B07B004DD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2A36C8ECDB8F7795C6F60E5 /* libPods-BaseRepository.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,9 +521,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 195BF6F2204C393600EAC45C /* Build configuration list for PBXNativeTarget "BaseRepository" */;
 			buildPhases = (
+				05A05E4034165CE82EB20F69 /* [CP] Check Pods Manifest.lock */,
 				195BF6D8204C393600EAC45C /* Sources */,
 				195BF6D9204C393600EAC45C /* Frameworks */,
 				195BF6DA204C393600EAC45C /* Resources */,
+				3C8DDBFCFD2A4186F0E230E9 /* [CP] Embed Pods Frameworks */,
+				1D5A167948694DE798AC62E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,6 +583,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05A05E4034165CE82EB20F69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseRepository-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D5A167948694DE798AC62E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseRepository/Pods-BaseRepository-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C8DDBFCFD2A4186F0E230E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseRepository/Pods-BaseRepository-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		195BF6D8204C393600EAC45C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -499,15 +643,20 @@
 				70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */,
 				195BF72B204D419300EAC45C /* UIWindow+Utility.m in Sources */,
 				195BF715204D3E0400EAC45C /* NSString+Utility.m in Sources */,
+				196A6796204F8B1000C4A745 /* NSString+URLEncode.m in Sources */,
+				196A6799204F8C4E00C4A745 /* NSData+MD5Digest.m in Sources */,
 				195BF6E4204C393600EAC45C /* ViewController.m in Sources */,
 				195BF71B204D3E5000EAC45C /* CDCalendarManager.m in Sources */,
 				195BF727204D403000EAC45C /* NSObject+CDSwizzleExtension.m in Sources */,
 				196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */,
 				196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */,
 				195BF70C204D3C5200EAC45C /* UITableView+EstimatedHeight.m in Sources */,
+				196A6790204F8A1000C4A745 /* ServerHostManager.m in Sources */,
 				195BF728204D403000EAC45C /* UIView+CDLayoutExtension.m in Sources */,
+				196A678D204F864000C4A745 /* ServerDownloadDataSource.m in Sources */,
 				195BF71C204D3E5200EAC45C /* CDDateFormatterManager.m in Sources */,
 				195BF731204D41CE00EAC45C /* NSString+Size.m in Sources */,
+				196A6793204F8AA400C4A745 /* CDJsonKit.m in Sources */,
 				195BF70F204D3DAD00EAC45C /* NSDate+Utility.m in Sources */,
 				195BF739204D48FB00EAC45C /* CDWeakableReference.m in Sources */,
 				195BF72E204D41B400EAC45C /* NSTimer+Callback.m in Sources */,
@@ -516,10 +665,15 @@
 				70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */,
 				195BF725204D403000EAC45C /* NSNull+CDSafeExtension.m in Sources */,
 				195BF6EF204C393600EAC45C /* main.m in Sources */,
+				196A6781204F7E7500C4A745 /* ServerDataSource.m in Sources */,
+				196A67A0204F913D00C4A745 /* CDUserDefaultsManager.m in Sources */,
+				196A679C204F8C6500C4A745 /* NSData+CommonCrypto.m in Sources */,
 				195BF6E1204C393600EAC45C /* AppDelegate.m in Sources */,
 				1951A24B204E40E300E3F565 /* JXCalculateFactory.m in Sources */,
 				196A677E204E7EE100C4A745 /* CDOverlayWindow.m in Sources */,
 				196A676E204E769800C4A745 /* BaseViewController.m in Sources */,
+				196A678C204F864000C4A745 /* CDResumeOperation.m in Sources */,
+				196A6784204F7EAC00C4A745 /* CDAbstractService.m in Sources */,
 				195BF726204D403000EAC45C /* NSObject+CDSafeExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,6 +806,7 @@
 		};
 		195BF6F3204C393600EAC45C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4025D103ABB7363BCA613FE4 /* Pods-BaseRepository.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -670,6 +825,7 @@
 		};
 		195BF6F4204C393600EAC45C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0BF4D0FC09B4C25E0190242 /* Pods-BaseRepository.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;

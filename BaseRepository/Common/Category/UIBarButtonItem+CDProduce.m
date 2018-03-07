@@ -50,7 +50,7 @@
 }
 
 +(UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action title:(NSString *)title titleColor:(UIColor *)titleColor {
-    return [self itemWithTarget:target action:action title:title font:nil titleColor:kCodoonColor highlightedColor:nil titleEdgeInsets:UIEdgeInsetsZero];
+    return [self itemWithTarget:target action:action title:title font:nil titleColor:[UIColor greenColor] highlightedColor:nil titleEdgeInsets:UIEdgeInsetsZero];
 }
 
 +(UIBarButtonItem *)itemWithTarget:(id)target
@@ -65,8 +65,8 @@
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
 
     [button setTitle:title forState:UIControlStateNormal];
-    button.titleLabel.font = font?font:CDFont(kTitleSizeNormal);
-    [button setTitleColor:titleColor?titleColor:kLightTextColor forState:UIControlStateNormal];
+    button.titleLabel.font = font?font:[UIFont systemFontOfSize:17];
+    [button setTitleColor:titleColor?titleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     [button setTitleColor:highlightedColor?highlightedColor:nil forState:UIControlStateHighlighted];
 
     [button sizeToFit];

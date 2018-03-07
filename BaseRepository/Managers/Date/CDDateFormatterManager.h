@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #define DateFormat_YYYY_MM_DD               @"yyyy-MM-dd"
-#define DateFormat_YYYY_MM_DD_HH:MM:SS      @"yyyy-MM-dd HH:mm:ss"
+#define DateFormat_YYYY_MM_DD_HH_MM_SS      @"yyyy-MM-dd HH:mm:ss"
 
 @interface CDDateFormatterManager : NSObject
 

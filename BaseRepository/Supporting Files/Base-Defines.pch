@@ -8,6 +8,7 @@
 
 #pragma mark - Blocks
 
+typedef void(^CommonBlockProgress)(CGFloat progress);
 typedef void(^CompleteCallback)(id data, NSError *error);
 typedef void(^CommonBlockCompletion)(id obj);
 typedef void(^CompleteStopCallback)(id data, NSError *error,BOOL *stop);
@@ -17,6 +18,7 @@ typedef void(^CompleteCancelCallback)(void);
 typedef void(^CompleteConfirmCallback)(void);
 typedef void(^CommonBlockError)(NSError *error);
 typedef void(^CommonVoidCallback)(void);
-
+typedef void(^CommonBlockCompletionWithCacheFlag)(id obj, BOOL cache);
+typedef void(^CommonBlockCompletionWithCacheFlagWithError)(id obj, BOOL cache,NSError *error);
 
 

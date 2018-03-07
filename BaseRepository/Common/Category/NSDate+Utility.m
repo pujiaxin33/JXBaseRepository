@@ -25,14 +25,14 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 }
 
 - (BOOL)sameSecondsAs:(NSDate *)date {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *comp1 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond fromDate:self];
     NSDateComponents *comp2 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond fromDate:date];
     return comp1.minute == comp2.minute && comp1.hour == comp2.hour && comp1.day == comp2.day && comp1.month == comp2.month && comp1.year == comp2.year && comp1.second == comp2.second;
 }
 
 - (BOOL)sameMinuteAs:(NSDate *)date {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *comp1 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:self];
     NSDateComponents *comp2 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute fromDate:date];
     return comp1.minute == comp2.minute && comp1.hour == comp2.hour && comp1.day == comp2.day && comp1.month == comp2.month && comp1.year == comp2.year;
@@ -40,7 +40,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (BOOL)sameDayAs:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *comp1 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:self];
     NSDateComponents *comp2 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:date];
     return comp1.day == comp2.day && comp1.month == comp2.month && comp1.year == comp2.year;
@@ -48,7 +48,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (BOOL)sameYearAs:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *comp1 = [calendar components:NSCalendarUnitYear fromDate:self];
     NSDateComponents *comp2 = [calendar components:NSCalendarUnitYear fromDate:date];
     return comp1.year == comp2.year;
@@ -56,7 +56,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (BOOL)sameWeekAs:(NSDate *)date
 {
-    NSCalendar *calendar = [[CDCalendarManager defaultManager] calendarWithFirstWeekday:2];
+    NSCalendar *calendar = [[CDCalendarManager sharedInstance] calendarWithFirstWeekday:2];
     NSDateComponents *comp1 = [calendar components:NSCalendarUnitYear|NSCalendarUnitWeekOfYear fromDate:self];
     NSDateComponents *comp2 = [calendar components:NSCalendarUnitYear|NSCalendarUnitWeekOfYear fromDate:date];
     return comp1.weekOfYear == comp2.weekOfYear && comp1.year == comp2.year;
@@ -64,7 +64,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (BOOL)sameMonthAs:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *comp1 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:self];
     NSDateComponents *comp2 = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:date];
     return comp1.month == comp2.month && comp1.year == comp2.year;
@@ -82,7 +82,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)previousDay
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.day = -1;
     return [calendar dateByAddingComponents:components toDate:self options:0];
@@ -90,7 +90,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)nextDay
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.day = 1;
     return [calendar dateByAddingComponents:components toDate:self options:0];
@@ -98,7 +98,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)nextWeek
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.weekOfYear = 1;
     return [calendar dateByAddingComponents:components toDate:self options:0];
@@ -106,7 +106,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)nextMonth
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.month = 1;
     return [calendar dateByAddingComponents:components toDate:self options:0];
@@ -114,28 +114,28 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSInteger)day
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:(NSCalendarUnitMonth | NSCalendarUnitDay) fromDate: self];
     return components.day;
 }
 
 - (NSInteger)month
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:(NSCalendarUnitMonth | NSCalendarUnitDay) fromDate: self];
     return components.month;
 }
 
 - (NSInteger)year
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:NSCalendarUnitYear fromDate: self];
     return components.year;
 }
 
 - (NSInteger)weekDay
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:NSCalendarUnitWeekday fromDate: self];
 
     return components.weekday;
@@ -143,7 +143,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtStartOfMonth
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     
     NSDate *date = nil;
     [calendar rangeOfUnit:NSCalendarUnitMonth startDate:&date interval:0 forDate:self];
@@ -157,7 +157,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtEndOfMonth
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     
     NSRange range = [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:self];
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
@@ -170,7 +170,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtStartOfWeek
 {
-    NSCalendar *calendar = [[CDCalendarManager defaultManager] calendarWithFirstWeekday:2];
+    NSCalendar *calendar = [[CDCalendarManager sharedInstance] calendarWithFirstWeekday:2];
     NSDate *date = nil;
     [calendar rangeOfUnit:NSCalendarUnitWeekOfMonth startDate:&date interval:nil forDate:self];
     
@@ -183,7 +183,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtEndOfWeek
 {
-    NSCalendar *calendar = [[CDCalendarManager defaultManager] calendarWithFirstWeekday:2];
+    NSCalendar *calendar = [[CDCalendarManager sharedInstance] calendarWithFirstWeekday:2];
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     if (components.weekday != 1)
     {
@@ -198,7 +198,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtStartOfDay
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     
     components.hour = 0;
@@ -210,7 +210,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtEndOfDay
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     
     components.hour = 23;
@@ -222,7 +222,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtStartOfYear
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     
@@ -238,7 +238,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateAtEndOfYear
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     NSRange monthRange = [calendar rangeOfUnit:NSCalendarUnitMonth inUnit:NSCalendarUnitYear forDate:self];
     components.month = monthRange.length;
@@ -257,7 +257,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)monthAtStartOfYear
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     
@@ -273,7 +273,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)monthAtEndOfYear
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     NSRange monthRange = [calendar rangeOfUnit:NSCalendarUnitMonth inUnit:NSCalendarUnitYear forDate:self];
     components.month = monthRange.length;
@@ -290,14 +290,14 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateByAddingDays:(NSInteger)days
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.day = days;
     return [calendar dateByAddingComponents:components toDate:self options:0];
 }
 - (NSDate *)dateByAddingYears:(NSInteger)years
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [[NSDateComponents alloc] init];
     components.year = years;
     return [calendar dateByAddingComponents:components toDate:self options:0];
@@ -305,7 +305,7 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSDate *)dateByIgnoreSeconds
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
 
     NSDateComponents *components = [calendar components:componentFlags fromDate:self];
     components.second = 0;
@@ -316,35 +316,35 @@ static const unsigned componentFlags = (NSCalendarUnitYear| NSCalendarUnitMonth 
 
 - (NSInteger)numberOfYearsFromDate:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:NSCalendarUnitYear fromDate:[date dateAtStartOfDay] toDate:[self dateAtStartOfDay] options:0];
     return components.year;
 }
 
 - (NSInteger)numberOfMonthsFromDate:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:NSCalendarUnitMonth fromDate:[date dateAtStartOfMonth] toDate:[self dateAtStartOfMonth] options:0];
     return components.month;
 }
 
 - (NSInteger)numberOfDaysFromDate:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:NSCalendarUnitDay fromDate:[date dateAtStartOfDay] toDate:[self dateAtStartOfDay] options:0];
     return components.day;
 }
 
 - (NSInteger)numberOfHoursFromDate:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:NSCalendarUnitHour fromDate:date toDate:self options:0];
     return components.hour;
 }
 
 - (NSInteger)numberOfSecondsFromDate:(NSDate *)date
 {
-    NSCalendar *calendar = [CDCalendarManager defaultManager].defaultCalendar;
+    NSCalendar *calendar = [CDCalendarManager sharedInstance].defaultCalendar;
     NSDateComponents *components = [calendar components:NSCalendarUnitSecond fromDate:date toDate:self options:0];
     return components.second;
 }
