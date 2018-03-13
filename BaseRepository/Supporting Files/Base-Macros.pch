@@ -19,3 +19,49 @@
 #define   Iphone6PlusScreen                             ([UIScreen mainScreen].bounds.size.width == 414 ? YES : NO)
 #define   Iphone6Screen                                ([UIScreen mainScreen].bounds.size.height == 667 ? YES : NO)
 #define   Iphone5Above                                  ([UIScreen mainScreen].bounds.size.height > 480 ? YES : NO)
+
+/**
+ *  判断block存在后执行
+ */
+#ifndef DO_BLOCK
+#define DO_BLOCK(_b_, ...) if(_b_){_b_(__VA_ARGS__);}
+#endif
+
+/**
+ JB_STRONGIFY
+ JB_STRONGIFY用来解除循环引用
+ */
+#ifndef JB_WEAKIFY
+#if DEBUG
+#if __has_feature(objc_arc)
+#define JB_WEAKIFY(object) __weak __typeof__(object) weak##_##object = object
+#else
+#define JB_WEAKIFY(object) __block __typeof__(object) block##_##object = object
+#endif
+#else
+#if __has_feature(objc_arc)
+#define JB_WEAKIFY(object) __weak __typeof__(object) weak##_##object = object
+#else
+#define JB_WEAKIFY(object) __block __typeof__(object) block##_##object = object
+#endif
+#endif
+#endif
+
+#ifndef JB_STRONGIFY
+#if DEBUG
+#if __has_feature(objc_arc)
+#define JB_STRONGIFY(object) __typeof__(object) object = weak##_##object
+#else
+#define JB_STRONGIFY(object) __typeof__(object) object = block##_##object
+#endif
+#else
+#if __has_feature(objc_arc)
+#define JB_STRONGIFY(object) __typeof__(object) object = weak##_##object
+#else
+#define JB_STRONGIFY(object) __typeof__(object) object = block##_##object
+#endif
+#endif
+#endif
+
+
+

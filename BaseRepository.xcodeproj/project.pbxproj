@@ -310,10 +310,10 @@
 		195BF6FD204D311F00EAC45C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				195BF709204D3B4C00EAC45C /* Category */,
 				196A6776204E7B2800C4A745 /* Constants */,
 				1951A247204E404400E3F565 /* Libraries */,
 				195BF736204D48E600EAC45C /* Other */,
-				195BF709204D3B4C00EAC45C /* Category */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -376,45 +376,8 @@
 		195BF709204D3B4C00EAC45C /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				1951A24D204E46A600E3F565 /* UIViewController */,
-				195BF730204D41CE00EAC45C /* NSString+Size.h */,
-				195BF72F204D41CD00EAC45C /* NSString+Size.m */,
-				196A6791204F8AA400C4A745 /* CDJsonKit.h */,
-				196A6792204F8AA400C4A745 /* CDJsonKit.m */,
-				196A6795204F8B1000C4A745 /* NSString+URLEncode.h */,
-				196A6794204F8B1000C4A745 /* NSString+URLEncode.m */,
-				196A6797204F8C4D00C4A745 /* NSData+MD5Digest.h */,
-				196A6798204F8C4E00C4A745 /* NSData+MD5Digest.m */,
-				1951A251204E475500E3F565 /* UIBarButtonItem+CDProduce.h */,
-				1951A250204E475400E3F565 /* UIBarButtonItem+CDProduce.m */,
-				70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */,
-				70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */,
-				195BF72D204D41B400EAC45C /* NSTimer+Callback.h */,
-				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
-				196A679B204F8C6400C4A745 /* NSData+CommonCrypto.h */,
-				196A679A204F8C6400C4A745 /* NSData+CommonCrypto.m */,
-				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
-				195BF729204D419300EAC45C /* UIWindow+Utility.m */,
-				70E4E507204F84FB0036BBA1 /* UIView+GestureBlock.h */,
-				70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */,
-				70E4E50A2050DC170036BBA1 /* CALayer+Transition.h */,
-				70E4E50B2050DC170036BBA1 /* CALayer+Transition.m */,
-				195BF722204D402F00EAC45C /* NSNull+CDSafeExtension.h */,
-				195BF71D204D402E00EAC45C /* NSNull+CDSafeExtension.m */,
-				195BF720204D402F00EAC45C /* NSObject+CDSafeExtension.h */,
-				195BF71E204D402F00EAC45C /* NSObject+CDSafeExtension.m */,
-				195BF723204D403000EAC45C /* NSObject+CDSwizzleExtension.h */,
-				195BF721204D402F00EAC45C /* NSObject+CDSwizzleExtension.m */,
-				195BF71F204D402F00EAC45C /* UIView+CDLayoutExtension.h */,
-				195BF724204D403000EAC45C /* UIView+CDLayoutExtension.m */,
-				195BF710204D3DBC00EAC45C /* NSError+Additions.h */,
-				195BF711204D3DBC00EAC45C /* NSError+Additions.m */,
-				195BF70D204D3DAD00EAC45C /* NSDate+Utility.h */,
-				195BF70E204D3DAD00EAC45C /* NSDate+Utility.m */,
-				195BF714204D3E0400EAC45C /* NSString+Utility.h */,
-				195BF713204D3E0300EAC45C /* NSString+Utility.m */,
-				195BF70A204D3C3700EAC45C /* UITableView+EstimatedHeight.h */,
-				195BF70B204D3C3700EAC45C /* UITableView+EstimatedHeight.m */,
+				19A0D03B2057823D0098AE37 /* Foundation */,
+				19A0D03A2057822B0098AE37 /* UIKit */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -505,6 +468,59 @@
 				196A679F204F913800C4A745 /* CDUserDefaultsManager.m */,
 			);
 			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		19A0D03A2057822B0098AE37 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1951A24D204E46A600E3F565 /* UIViewController */,
+				1951A251204E475500E3F565 /* UIBarButtonItem+CDProduce.h */,
+				1951A250204E475400E3F565 /* UIBarButtonItem+CDProduce.m */,
+				195BF72A204D419300EAC45C /* UIWindow+Utility.h */,
+				195BF729204D419300EAC45C /* UIWindow+Utility.m */,
+				70E4E507204F84FB0036BBA1 /* UIView+GestureBlock.h */,
+				70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */,
+				70E4E50A2050DC170036BBA1 /* CALayer+Transition.h */,
+				70E4E50B2050DC170036BBA1 /* CALayer+Transition.m */,
+				195BF71F204D402F00EAC45C /* UIView+CDLayoutExtension.h */,
+				195BF724204D403000EAC45C /* UIView+CDLayoutExtension.m */,
+				195BF70A204D3C3700EAC45C /* UITableView+EstimatedHeight.h */,
+				195BF70B204D3C3700EAC45C /* UITableView+EstimatedHeight.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		19A0D03B2057823D0098AE37 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				195BF730204D41CE00EAC45C /* NSString+Size.h */,
+				195BF72F204D41CD00EAC45C /* NSString+Size.m */,
+				196A6791204F8AA400C4A745 /* CDJsonKit.h */,
+				196A6792204F8AA400C4A745 /* CDJsonKit.m */,
+				196A6795204F8B1000C4A745 /* NSString+URLEncode.h */,
+				196A6794204F8B1000C4A745 /* NSString+URLEncode.m */,
+				196A6797204F8C4D00C4A745 /* NSData+MD5Digest.h */,
+				196A6798204F8C4E00C4A745 /* NSData+MD5Digest.m */,
+				70E4E501204E42220036BBA1 /* NSString+FilePathSize.h */,
+				70E4E502204E42220036BBA1 /* NSString+FilePathSize.m */,
+				195BF72D204D41B400EAC45C /* NSTimer+Callback.h */,
+				195BF72C204D41B300EAC45C /* NSTimer+Callback.m */,
+				196A679B204F8C6400C4A745 /* NSData+CommonCrypto.h */,
+				196A679A204F8C6400C4A745 /* NSData+CommonCrypto.m */,
+				195BF722204D402F00EAC45C /* NSNull+CDSafeExtension.h */,
+				195BF71D204D402E00EAC45C /* NSNull+CDSafeExtension.m */,
+				195BF720204D402F00EAC45C /* NSObject+CDSafeExtension.h */,
+				195BF71E204D402F00EAC45C /* NSObject+CDSafeExtension.m */,
+				195BF723204D403000EAC45C /* NSObject+CDSwizzleExtension.h */,
+				195BF721204D402F00EAC45C /* NSObject+CDSwizzleExtension.m */,
+				195BF710204D3DBC00EAC45C /* NSError+Additions.h */,
+				195BF711204D3DBC00EAC45C /* NSError+Additions.m */,
+				195BF70D204D3DAD00EAC45C /* NSDate+Utility.h */,
+				195BF70E204D3DAD00EAC45C /* NSDate+Utility.m */,
+				195BF714204D3E0400EAC45C /* NSString+Utility.h */,
+				195BF713204D3E0300EAC45C /* NSString+Utility.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		36B6364055729255635C2FF6 /* Pods */ = {

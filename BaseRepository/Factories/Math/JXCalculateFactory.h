@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+static inline CGFloat JXInterpolation(CGFloat from, CGFloat to, CGFloat percent) {
+    percent = MAX(0, MIN(1, percent));
+    return (to - from)*percent + from;
+}
+
 @interface JXCalculateFactory : NSObject
 
 + (CGFloat)interpolateFrom:(CGFloat)from to:(CGFloat)to percent:(CGFloat)percent;
