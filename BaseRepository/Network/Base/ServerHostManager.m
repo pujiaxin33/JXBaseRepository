@@ -11,7 +11,7 @@
 @implementation ServerHostManager
 
 + (NSString *)defaultHost {
-    return @"https:api.codoon.com";
+    return @"http://192.168.0.110:8081";
 }
 
 @end

@@ -49,6 +49,10 @@
 		70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E505204E95090036BBA1 /* UIViewController+RotateScreen.m */; };
 		70E4E509204F84FB0036BBA1 /* UIView+GestureBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E508204F84FB0036BBA1 /* UIView+GestureBlock.m */; };
 		70E4E50C2050DC170036BBA1 /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4E50B2050DC170036BBA1 /* CALayer+Transition.m */; };
+		B5B677A1206397D000E7AA4A /* YPRefreshTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B677A0206397D000E7AA4A /* YPRefreshTokenManager.m */; };
+		B5B677A42063A0B500E7AA4A /* YPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B677A32063A0B500E7AA4A /* YPUserService.m */; };
+		B5B677A82063A2AF00E7AA4A /* CDGTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B677A72063A2AF00E7AA4A /* CDGTMBase64.m */; };
+		B5B677AB2064D4AC00E7AA4A /* YPServerConstans.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B677AA2064D4AC00E7AA4A /* YPServerConstans.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,6 +149,15 @@
 		70E4E50A2050DC170036BBA1 /* CALayer+Transition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
 		70E4E50B2050DC170036BBA1 /* CALayer+Transition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
 		B0BF4D0FC09B4C25E0190242 /* Pods-BaseRepository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseRepository.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseRepository/Pods-BaseRepository.release.xcconfig"; sourceTree = "<group>"; };
+		B5B6779F206397D000E7AA4A /* YPRefreshTokenManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPRefreshTokenManager.h; sourceTree = "<group>"; };
+		B5B677A0206397D000E7AA4A /* YPRefreshTokenManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPRefreshTokenManager.m; sourceTree = "<group>"; };
+		B5B677A22063A0B500E7AA4A /* YPUserService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPUserService.h; sourceTree = "<group>"; };
+		B5B677A32063A0B500E7AA4A /* YPUserService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPUserService.m; sourceTree = "<group>"; };
+		B5B677A52063A2AE00E7AA4A /* CDGTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGTMBase64.h; sourceTree = "<group>"; };
+		B5B677A62063A2AE00E7AA4A /* CDGTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGTMDefines.h; sourceTree = "<group>"; };
+		B5B677A72063A2AF00E7AA4A /* CDGTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDGTMBase64.m; sourceTree = "<group>"; };
+		B5B677A92064D4AC00E7AA4A /* YPServerConstans.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPServerConstans.h; sourceTree = "<group>"; };
+		B5B677AA2064D4AC00E7AA4A /* YPServerConstans.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPServerConstans.m; sourceTree = "<group>"; };
 		D2A36C8ECDB8F7795C6F60E5 /* libPods-BaseRepository.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseRepository.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -257,14 +270,12 @@
 			children = (
 				195BF6DF204C393600EAC45C /* AppDelegate.h */,
 				195BF6E0204C393600EAC45C /* AppDelegate.m */,
-				195BF6FB204D310400EAC45C /* Models */,
 				195BF6FA204D30FF00EAC45C /* Views */,
 				195BF6F9204D30F300EAC45C /* Controllers */,
 				1951A24C204E43CF00E3F565 /* Network */,
 				195BF6FD204D311F00EAC45C /* Common */,
 				195BF6FE204D318100EAC45C /* Managers */,
 				1951A242204E3F7000E3F565 /* Factories */,
-				195BF6FF204D319F00EAC45C /* DAO */,
 				195BF6FC204D311200EAC45C /* Assets */,
 				195BF702204D32A800EAC45C /* Supporting Files */,
 			);
@@ -287,13 +298,6 @@
 				195BF701204D327100EAC45C /* Main */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		195BF6FB204D310400EAC45C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		195BF6FC204D311200EAC45C /* Assets */ = {
@@ -321,17 +325,11 @@
 		195BF6FE204D318100EAC45C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				B5B6779E2063975900E7AA4A /* Token */,
 				196A679D204F912000C4A745 /* UserDefaults */,
 				195BF716204D3E3600EAC45C /* Date */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		195BF6FF204D319F00EAC45C /* DAO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DAO;
 			sourceTree = "<group>";
 		};
 		195BF700204D324600EAC45C /* Images */ = {
@@ -410,6 +408,9 @@
 			children = (
 				195BF737204D48EF00EAC45C /* CDWeakableReference.h */,
 				195BF738204D48EF00EAC45C /* CDWeakableReference.m */,
+				B5B677A52063A2AE00E7AA4A /* CDGTMBase64.h */,
+				B5B677A72063A2AF00E7AA4A /* CDGTMBase64.m */,
+				B5B677A62063A2AE00E7AA4A /* CDGTMDefines.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -457,6 +458,8 @@
 				196A678B204F864000C4A745 /* ServerDownloadDataSource.m */,
 				196A678E204F8A1000C4A745 /* ServerHostManager.h */,
 				196A678F204F8A1000C4A745 /* ServerHostManager.m */,
+				B5B677A92064D4AC00E7AA4A /* YPServerConstans.h */,
+				B5B677AA2064D4AC00E7AA4A /* YPServerConstans.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -538,6 +541,17 @@
 				D2A36C8ECDB8F7795C6F60E5 /* libPods-BaseRepository.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5B6779E2063975900E7AA4A /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				B5B6779F206397D000E7AA4A /* YPRefreshTokenManager.h */,
+				B5B677A0206397D000E7AA4A /* YPRefreshTokenManager.m */,
+				B5B677A22063A0B500E7AA4A /* YPUserService.h */,
+				B5B677A32063A0B500E7AA4A /* YPUserService.m */,
+			);
+			path = Token;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,6 +684,7 @@
 			files = (
 				1951A252204E475600E3F565 /* UIBarButtonItem+CDProduce.m in Sources */,
 				70E4E506204E95090036BBA1 /* UIViewController+RotateScreen.m in Sources */,
+				B5B677A82063A2AF00E7AA4A /* CDGTMBase64.m in Sources */,
 				195BF72B204D419300EAC45C /* UIWindow+Utility.m in Sources */,
 				195BF715204D3E0400EAC45C /* NSString+Utility.m in Sources */,
 				196A6796204F8B1000C4A745 /* NSString+URLEncode.m in Sources */,
@@ -679,6 +694,7 @@
 				195BF727204D403000EAC45C /* NSObject+CDSwizzleExtension.m in Sources */,
 				196A6775204E770A00C4A745 /* BaseTableViewCell.m in Sources */,
 				70E4E509204F84FB0036BBA1 /* UIView+GestureBlock.m in Sources */,
+				B5B677A1206397D000E7AA4A /* YPRefreshTokenManager.m in Sources */,
 				196A6771204E76C600C4A745 /* BaseTableViewController.m in Sources */,
 				70E4E50C2050DC170036BBA1 /* CALayer+Transition.m in Sources */,
 				195BF70C204D3C5200EAC45C /* UITableView+EstimatedHeight.m in Sources */,
@@ -687,10 +703,12 @@
 				196A678D204F864000C4A745 /* ServerDownloadDataSource.m in Sources */,
 				195BF71C204D3E5200EAC45C /* CDDateFormatterManager.m in Sources */,
 				195BF731204D41CE00EAC45C /* NSString+Size.m in Sources */,
+				B5B677A42063A0B500E7AA4A /* YPUserService.m in Sources */,
 				196A6793204F8AA400C4A745 /* CDJsonKit.m in Sources */,
 				195BF70F204D3DAD00EAC45C /* NSDate+Utility.m in Sources */,
 				195BF739204D48FB00EAC45C /* CDWeakableReference.m in Sources */,
 				195BF72E204D41B400EAC45C /* NSTimer+Callback.m in Sources */,
+				B5B677AB2064D4AC00E7AA4A /* YPServerConstans.m in Sources */,
 				195BF712204D3DBC00EAC45C /* NSError+Additions.m in Sources */,
 				195BF735204D475400EAC45C /* CDPopoverView.m in Sources */,
 				70E4E503204E42220036BBA1 /* NSString+FilePathSize.m in Sources */,
@@ -841,15 +859,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CUHY5967Q2;
+				DEVELOPMENT_TEAM = 2WARB38VJA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaseRepository/Supporting Files/Base-Prefix.pch";
 				INFOPLIST_FILE = "BaseRepository/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jiaxin.BaseRepository;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiaxin.BaseRepository;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -860,15 +880,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CUHY5967Q2;
+				DEVELOPMENT_TEAM = 2WARB38VJA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BaseRepository/Supporting Files/Base-Prefix.pch";
 				INFOPLIST_FILE = "BaseRepository/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jiaxin.BaseRepository;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiaxin.BaseRepository;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -12,6 +12,7 @@
 #import "NSData+MD5Digest.h"
 #import "NSData+CommonCrypto.h"
 #import "NSString+URLEncode.h"
+#import "YPRefreshTokenManager.h"
 
 #define  kCodoonErrorDomainString   @"com.codoon.error"
 static float const kRequestTimeoutInterval = 30.f;
@@ -115,7 +116,7 @@ onCacheFlagCompletion:(CommonBlockCompletionWithCacheFlag)completionCallback
 {
     NSParameterAssert(params);
     
-    NSString *token = @"";
+    NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
     
     return [self post:url
         params:params
@@ -192,7 +193,6 @@ onCacheFlagCompletion:completionCallback
         [self.manager.requestSerializer setValue:obj forHTTPHeaderField:key];
     }];
 
-    
     //创建操作
     NSURLSessionDataTask *requestTask = [self.manager POST:url
                                                 parameters:params
@@ -403,19 +403,11 @@ onCacheFlagCompletion:(CommonBlockCompletionWithCacheFlag)completionCallback
             break;
         case CDHttpSerializerTypeNone:
         {
-            if ([self.baseUrl rangeOfString:@"/api/"].length > 0 || [url rangeOfString:@"/api/"].length > 0 || [url rangeOfString:@"/v2/"].length > 0)
-            {
-                //请求
-                AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
-                [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-                manager.requestSerializer = requestSerializer;
-                [manager.requestSerializer setTimeoutInterval:kRequestTimeoutInterval];
-            }
-            else if ([url hasPrefix:@"http://notify.codoon.com"])
-            {
-                //设置超时时间
-                [manager.requestSerializer setTimeoutInterval:120];
-            }
+            //请求
+            AFJSONRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
+            [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+            manager.requestSerializer = requestSerializer;
+            [manager.requestSerializer setTimeoutInterval:kRequestTimeoutInterval];
         }
             break;
         case CDHttpSerializerTypePropertyList:
@@ -457,6 +449,10 @@ onCacheFlagCompletion:(CommonBlockCompletionWithCacheFlag)completionCallback
 }
 
 - (void)configureHeaderFieldsWithToken:(NSString *)token tokenType:(NSString *)tokenType forURLString:(NSString *)URLString utm:(NSString *)utm {
+    AFHTTPRequestSerializer *serializer = self.manager.requestSerializer;
+    //添加验证信息
+    NSString *authorization = [NSString stringWithFormat:@"%@ %@", tokenType, token];
+    [serializer setValue:authorization forHTTPHeaderField:@"Authorization"];
 }
 
 #pragma mark - handle
@@ -472,10 +468,29 @@ onCacheFlagCompletion:(CommonBlockCompletionWithCacheFlag)completionCallback
 - (void)handleFailTask:(NSURLSessionTask *)task error:(NSError *)error params:(NSDictionary *)params tokenType:(NSString *)tokenType completion:(CommonBlockCompletionWithCacheFlag)completionCallback errorCallback:(CommonBlockError)errorCallback
 
 {
-//    NSInteger statusCode = [(NSHTTPURLResponse *)task.response statusCode];
-//    NSString* errResponse = [[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding];
-//    NSDictionary *jsonError = [errResponse cd_objectFromJSONString];
-//    NSInteger errorCode = [[[jsonError validDictionary] validNumberForKey:@"error_code"] integerValue];
+    NSInteger statusCode = [(NSHTTPURLResponse *)task.response statusCode];
+    NSString* errResponse = [[NSString alloc] initWithData:(NSData *)error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey] encoding:NSUTF8StringEncoding];
+    NSDictionary *jsonError = [errResponse cd_objectFromJSONString];
+    NSInteger errorCode = [[[jsonError validDictionary] validNumberForKey:@"error_code"] integerValue];
+    if (error.code != -1009) {
+        NSLog(@"请求接口失败 params = %@ \n  error=%@    \n   tokenType=%@   \n  task = %@   \n statusCode = %ld   \n  errorCode = %ld  \n responese = %@ ", params, error, tokenType, task, (long)statusCode, (long)errorCode, jsonError);
+    }
+    if (statusCode == 401) //token 过期
+    {
+        NSString *requestToken = [self requestTokenForTask:task];
+        [YPRefreshTokenManager refreshTokenWithRequestToken:requestToken completion:^(NSString *newToken, NSError *tokenError) {
+            if (newToken && [newToken length]) {
+                //重新发这个请求    嘿嘿嘿
+                [self requestNewTask:task newToken:newToken error:error params:params tokenType:tokenType completion:completionCallback errorCallback:errorCallback];
+            } else {
+                NSLog(@"token刷新失败，其他错误");
+                [self handleFailBlock:errorCallback error:error];
+                if(task.originalRequest.URL.absoluteString) {
+                    [self.requestOperationPool removeObjectForKey:task.originalRequest.URL.absoluteString];
+                };
+            }
+        }];
+    }
 }
 
 - (void)requestNewTask:(NSURLSessionTask *)task newToken:(NSString *)newToken error:(NSError *)error params:(NSDictionary *)params tokenType:(NSString *)tokenType completion:(CommonBlockCompletionWithCacheFlag)completionCallback errorCallback:(CommonBlockError)errorCallback {
